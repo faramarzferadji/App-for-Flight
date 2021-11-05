@@ -66,8 +66,8 @@ namespace Flight.ASP.NET
             decimal baseprice = 0, disprice = 0, trpprice = 0, fclassprice = 0, servprice = 0, subtotal = 0,
                 tax = 0, total = 0;
             String from = "", ditance = "", trip = "", fclass = "", service = "",dtime ="";
-           // baseprice = Convert.ToDecimal(cbocity.SelectedItem.Value);
-           // disprice = Convert.ToDecimal(listdist.SelectedItem.Value);
+           
+           
             trpprice = Convert.ToDecimal(radlisttrip.SelectedItem.Value);
              fclassprice = Convert.ToDecimal(ListBoxfclass.SelectedItem.Value);
             fclass = ListBoxfclass.SelectedItem.Text;
@@ -117,8 +117,8 @@ namespace Flight.ASP.NET
             subtotal = ((baseprice + disprice) * trpprice) + fclassprice + servprice;
             tax = (subtotal * 15) / 100;
             total = subtotal + tax;
-            //from = cbocity.SelectedItem.Text;
-            //ditance = listdist.SelectedItem.Text;
+            
+            
            
                 dtime = txtdattime.Text;
                 trip = radlisttrip.SelectedItem.Text;
